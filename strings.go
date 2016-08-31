@@ -1,14 +1,10 @@
 package goutil
 
 import (
+	"fmt"
 	"strings"
 )
 
-type StringUtil struct{}
-
-func (this *StringUtil) TrimToEmpty(str string) string {
-	if str == nil {
-		return ""
-	}
+func TrimToEmpty(str string) string {
 	return strings.TrimSpace(str)
 }
