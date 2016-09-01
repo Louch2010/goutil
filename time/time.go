@@ -1,7 +1,6 @@
 package time
 
 import (
-	"fmt"
 	"time"
 )
 
@@ -65,12 +64,3 @@ func Time17Format(t time.Time) string {
 func TimeFullFormat(t time.Time) string {
 	return t.Format(DateTime_Pattern_yyyy_MM_dd_HH_mm_ss)
 }
-
-/*func main() {
-	fmt.Println(Date6Now())
-	fmt.Println(Date8Now())
-	fmt.Println(Date10Now())
-	fmt.Println(Time14Now())
-	fmt.Println(Time17Now())
-	fmt.Println(TimeFullNow())
-}*/
