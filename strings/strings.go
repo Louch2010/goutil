@@ -4,10 +4,12 @@ import (
 	"strings"
 )
 
-func TrimToEmpty(str string) string {
+type StringUtil struct{}
+
+func (this StringUtil) TrimToEmpty(str string) string {
 	return strings.TrimSpace(str)
 }
 
-func GetHello() string {
+func (this StringUtil) GetHello() string {
 	return "hello~"
 }
