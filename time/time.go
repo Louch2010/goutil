@@ -66,3 +66,10 @@ func (this DateUtil) Time17Format(t time.Time) string {
 func (this DateUtil) TimeFullFormat(t time.Time) string {
 	return t.Format(DateTime_Pattern_yyyy_MM_dd_HH_mm_ss)
 }
+
+/*日期时间解析*/
+func (this DateUtil) ParseTime14(str string) (time.Time, error) {
+	location, _ := time.LoadLocation("Local")
+	t, err := time.ParseInLocation(DateTime_Pattern_yyyyMMddHHmmss, str, location)
+	return t, err
+}
